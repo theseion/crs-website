@@ -10,7 +10,7 @@ The generated website is automatically updated at https://coreruleset.org/. If y
 ## Requirements
 
 You can edit the documentation on your local system. You will need:
-- [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for installing dependencies. The version we build with is pinned in `.tool-versions`, so [mise](https://mise.jdx.dev/) or [asdf](https://asdf-vm.com/) will pick it up automatically
+- [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for installing dependencies
 - [dart-sass](https://github.com/sass/dart-sass) for transpiling to CSS
 
 `npm install` pulls in Hugo _extended_ as the `hugo-extended` package, so the npm scripts below work without a system-wide install. If you prefer your own [Hugo binary](https://gohugo.io/getting-started/installing/), it must be the **extended** build.
