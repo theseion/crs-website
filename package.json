@@ -8,7 +8,7 @@
     "start": "hugo serve --logLevel info --configDir=config --buildDrafts --buildFuture --ignoreCache --disableFastRender --gc  --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates --templateMetrics --templateMetricsHints",
     "dev": "pnpm dev:start",
     "dev:start": "hugo serve --logLevel info --configDir=config --themesDir=themes --buildDrafts --buildFuture --ignoreCache --disableFastRender --gc  --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates --templateMetrics --templateMetricsHints",
-    "dev:start:with-pagefind": "hugo --baseURL=/ --themesDir=themes --theme=dot-org-hugo-theme && pnpm dlx pagefind --site 'public' --output-subdir '../static/pagefind' && pnpm dev:start",
+    "dev:start:with-pagefind": "hugo --baseURL=/ --themesDir=themes --theme=dot-org-hugo-theme && pnpm exec pagefind --site 'public' --output-subdir '../static/pagefind' && pnpm dev:start",
     "dev:build": "hugo --themesDir=themes --theme=dot-org-hugo-theme"
   },
   "repository": {
@@ -30,6 +30,7 @@
     "postcss-cli": "^11.0.0"
   },
   "devDependencies": {
+    "pagefind": "1.5.2",
     "prettier": "3.8.4"
   }
 }

@@ -54,7 +54,7 @@ jobs:
           hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
           hugo -s subsite/docs --baseURL "${{ steps.pages.outputs.base_url }}/docs/"
           mv subsite/docs/public public/docs
-          pnpm dlx pagefind --site public
+          pnpm exec pagefind --site public
 
       - name: Restore lychee cache
         id: restore-cache
